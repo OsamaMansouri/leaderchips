@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --brand-red: #e31837;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+@layer utilities {
+  .interactive-card {
+    box-shadow:
+      0 1px 2px rgb(0 0 0 / 0.06),
+      0 8px 20px -4px rgb(0 0 0 / 0.14),
+      0 24px 48px -12px rgb(0 0 0 / 0.2);
+    transition:
+      transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+      filter 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+      background 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform, box-shadow;
+  }
+
+  .interactive-card:hover {
+    transform: translateY(-5px);
+    box-shadow:
+      0 2px 4px rgb(0 0 0 / 0.08),
+      0 14px 32px -6px rgb(0 0 0 / 0.18),
+      0 32px 64px -12px rgb(0 0 0 / 0.28);
+  }
+
+  .interactive-card:active {
+    transform: translateY(-2px) scale(0.985);
+    transition-duration: 0.15s;
+  }
+
+  .card-size {
+    @apply h-[4.75rem] w-full sm:h-[5.25rem] md:h-[5.75rem];
+  }
+}
