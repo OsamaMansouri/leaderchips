@@ -13,19 +13,12 @@ const iconClass =
 
 const socialLinks = [
   {
-    href: "https://www.instagram.com/leaderchips_maroc/?hl=en",
-    label: "@leaderchips_maroc",
+    href: "https://www.instagram.com/Leaderchipsmaroc",
+    label: "@Leaderchipsmaroc",
     icon: "/images/instagram.png",
     iconClass,
     className:
       "bg-gradient-to-r from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] hover:brightness-[1.08]",
-  },
-  {
-    href: "https://www.tiktok.com/@leaderchipsmaroc",
-    label: "@leaderchipsmaroc",
-    icon: "/images/tiktok.png",
-    iconClass: `${iconClass} drop-shadow-[0_0_6px_rgba(255,255,255,0.5)]`,
-    className: "bg-black hover:bg-neutral-800",
   },
   {
     href: "https://wa.me/212600000000",
@@ -59,9 +52,9 @@ export default function Home() {
           <section className={bannerClass}>
             <Image
               src="/images/banner.png"
-              alt="قضي على الملل"
-              width={1000}
-              height={350}
+              alt="Leader Chips — deux ados à la plage"
+              width={2400}
+              height={789}
               priority
               className="h-auto w-full object-contain"
             />
